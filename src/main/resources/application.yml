@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: nginx
+          uri: http://172.17.0.2
+          predicates:
+            - Path=/**
